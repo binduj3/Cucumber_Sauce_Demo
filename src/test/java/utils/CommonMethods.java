@@ -14,9 +14,8 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.util.List;
 import java.util.Date;
-import java.util.Random;
+import java.util.List;
 
 public class CommonMethods extends PageInitialiser{
 
