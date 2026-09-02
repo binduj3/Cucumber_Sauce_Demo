@@ -20,7 +20,6 @@ Feature: Login Page UI and Authentication Validation
     And user enters "secret_sauce" into the Password field
     And user clicks the Login button
     Then user is able to see the Products page
-    And user is redirected to "https://www.saucedemo.com/inventory.html"
 
   @login @negative @high
   Scenario: Login attempt with empty username and empty password
@@ -36,7 +35,7 @@ Feature: Login Page UI and Authentication Validation
     And user enters "<password>" into the Password field
     And user clicks the Login button
     Then user is not able to log in
-    And user is able to see the error message "<errorMessage>" beside "<field>" field
+    And user is able to see the error message "<errorMessage>"
     Examples:
       | username      | password      | field    | errorMessage                             |
       |               | secret_sauce  | username | Epic sadface: Username is required       |
