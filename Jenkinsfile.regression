@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Run Regression Tests') {
             steps {
-                sh "mvn test -Dcucumber.filter.tags=@regression"
+                bat "mvn test -Dcucumber.filter.tags=@regression"
             }
         }
     }
